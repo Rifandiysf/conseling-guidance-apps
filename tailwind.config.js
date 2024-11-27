@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Jakarta: ["Plus Jakarta Sans"]
+        plusjakarta: ['Plus Jakarta Sans'] 
       },
       colors: {
         primary: '#3195F7',
@@ -13,6 +13,12 @@ export default {
         body: '#ffffff',
         container: '#F0F4F9',
         text: '#292D32'
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateX(-25%)' },
+          '50%': { transform: 'translateX(0)' },
+        }
       }
     },
   },

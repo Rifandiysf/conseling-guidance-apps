@@ -1,7 +1,6 @@
-
 import Dashboard from "./Pages/Dashboard"
 import LandingPage from "./Pages/LandingPage"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Register from "./Pages/Register"
 import TestPsikologi from "./Pages/TestPsikologi"
 import Absensi from "./Pages/Absensi"
@@ -9,44 +8,21 @@ import Problem from "./Pages/Problem"
 import Konsultasi from "./Pages/Konsultasi"
 import Login from "./Pages/Login"
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Dashboard/> 
-  },
-  {
-    path: "/login",
-    element: <Login/> 
-  },
-  {
-    path: "/register",
-    element: <Register/> 
-  },
-  {
-    path: "/landing-page",
-    element: <LandingPage/> 
-  },
-  {
-    path: "/test-psikologi",
-    element: <TestPsikologi/> 
-  },  {
-    path: "/absensi",
-    element: <Absensi/> 
-  },
-  {
-    path: "/problem",
-    element: <Problem/> 
-  },
-  {
-    path: "/konsultasi",
-    element: <Konsultasi/> 
-  }
-])
-
 function App() {
   return (
     <>
-      <RouterProvider router={router}/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard/>} loader={() => {document.title = "Dashboard | Counseling Guidance PI"}}/>
+          <Route path="/login" element={<Login/>} loader={() => {document.title = "Login | Counseling Guidance PI"}}/>
+          <Route path="/register" element={<Register/>} loader={() => {document.title = "Register | Counseling Guidance PI"}}/>
+          <Route path="/landing-page" element={<LandingPage/>} loader={() => {document.title = "Landing Page | Counseling Guidance PI"}}/>
+          <Route path="/test-psikologi" element={<TestPsikologi/>} loader={() => {document.title = "Test Psikologi | Counseling Guidance PI"}}/>
+          <Route path="/absensi" element={<Absensi/>} loader={() => {document.title = "Absensi Page | Counseling Guidance PI"}}/>
+          <Route path="/problem" element={<Problem/>} loader={() => {document.title = "Problem Page | Counseling Guidance PI"}}/>
+          <Route path="/konsultasi" element={<Konsultasi/>} loader={() => {document.title = "Konsultasi Page | Counseling Guidance PI"}}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
