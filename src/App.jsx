@@ -8,21 +8,23 @@ import Problem from "./Pages/Problem"
 import Konsultasi from "./Pages/Konsultasi"
 import Login from "./Pages/Login"
 import Setting from "./Pages/Setting"
+import Layout from "./Components/Layout"
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Layout/>
         <Routes>
-          <Route path="/" element={<Dashboard/>} loader={() => {document.title = "Dashboard | Counseling Guidance PI"}}/>
-          <Route path="/setting" element={<Setting/>} loader={() => {document.title = "Setting | Counseling Guidance PI"}}/>
-          <Route path="/login" element={<Login/>} loader={() => {document.title = "Login | Counseling Guidance PI"}}/>
-          <Route path="/register" element={<Register/>} loader={() => {document.title = "Register | Counseling Guidance PI"}}/>
-          <Route path="/landing-page" element={<LandingPage/>} loader={() => {document.title = "Landing Page | Counseling Guidance PI"}}/>
-          <Route path="/test-psikologi" element={<TestPsikologi/>} loader={() => {document.title = "Test Psikologi | Counseling Guidance PI"}}/>
-          <Route path="/absensi" element={<Absensi/>} loader={() => {document.title = "Absensi Page | Counseling Guidance PI"}}/>
-          <Route path="/problem" element={<Problem/>} loader={() => {document.title = "Problem Page | Counseling Guidance PI"}}/>
-          <Route path="/konsultasi" element={<Konsultasi/>} loader={() => {document.title = "Konsultasi Page | Counseling Guidance PI"}}/>
+          <Route path="/" element={<Dashboard/>} loader={() => {document.title = "Dashboard | PISchool Counseling Guidance"}}/>
+          <Route path="/setting" element={<Setting/>} loader={() => {document.title = "Setting | PISchool Counseling Guidance"}}/>
+          <Route path="/login" element={<Login/>} loader={() => {document.title = "Login | PISchool Counseling Guidance"}}/>
+          <Route path="/register" element={<Register/>} loader={() => {document.title = "Register | PISchool Counseling Guidance"}}/>
+          <Route path="/landing-page" element={<LandingPage/>} loader={() => {document.title = "Landing Page | PISchool Counseling Guidance"}}/>
+          <Route path="/test-psikologi" element={<TestPsikologi/>} loader={() => {document.title = "Test Psikologi | PISchool Counseling Guidance"}}/>
+          <Route path="/absensi" element={<Absensi/>} loader={() => {document.title = "Absensi Page | PISchool Counseling Guidance"}}/>
+          <Route path="/problem" element={<Problem/>} loader={() => {document.title = "Problem Page | PISchool Counseling Guidance"}}/>
+          <Route path="/konsultasi" element={<Konsultasi/>} loader={() => {document.title = "Konsultasi Page | PISchool Counseling Guidance"}}/>
         </Routes>
       </BrowserRouter>
     </>

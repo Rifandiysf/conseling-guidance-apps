@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const SideBar = () => {
   return (
-    <aside className="flex flex-col justify-between w-[20%] h-dvh fixed z-50 bg-container">
+    <aside className="flex flex-col justify-between w-[280px] h-dvh fixed left-0 top-0 z-50 bg-container">
         <div className="flex flex-col gap-12">
             <h1 className="flex justify-center items-center text-2xl font-bold mt-[33px]">LOGO</h1>
             <nav className="flex flex-col">
