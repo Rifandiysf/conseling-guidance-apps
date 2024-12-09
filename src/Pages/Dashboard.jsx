@@ -1,8 +1,12 @@
+import Layout from "../Components/Layout"
 
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+      <Layout/>
+      <div></div>
+    </>
   )
 }
 

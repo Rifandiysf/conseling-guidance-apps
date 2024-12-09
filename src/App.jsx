@@ -8,15 +8,17 @@ import Problem from "./Pages/Problem"
 import Konsultasi from "./Pages/Konsultasi"
 import Login from "./Pages/Login"
 import Setting from "./Pages/Setting"
-import Layout from "./Components/Layout"
+import NotFound from "./Components/NotFound"
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Layout/>
         <Routes>
           <Route path="/" element={<Dashboard/>} loader={() => {document.title = "Dashboard | PISchool Counseling Guidance"}}/>
+          <Route path="*" element={<NotFound/>} loader={() => {document.title = "Not Found | PISchool Counseling Guidance"}}/>
+
           <Route path="/setting" element={<Setting/>} loader={() => {document.title = "Setting | PISchool Counseling Guidance"}}/>
           <Route path="/login" element={<Login/>} loader={() => {document.title = "Login | PISchool Counseling Guidance"}}/>
           <Route path="/register" element={<Register/>} loader={() => {document.title = "Register | PISchool Counseling Guidance"}}/>

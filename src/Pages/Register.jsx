@@ -37,49 +37,9 @@ const Register = () => {
               <label htmlFor="class" className="font-semibold">Kelas</label>
               <select name="class" id="class" className="h-10 border-none outline-none px-1 bg-container text-xl rounded-md cursor-pointer focus:ring-primary focus:ring-2" required>
                 <option value="">Select your class</option>
-                <optgroup label="Pengembangan Perangkat Lunak & Gim">
-                  <option value="X-PPLG">X-PPLG</option>
-                  <option value="XI-PPLG 1">XI-PPLG 1</option>
-                  <option value="XI-PPLG 2">XI-PPLG 2</option>
-                  <option value="XII-PPLG">XII-PPLG</option>
-                </optgroup>
-                <optgroup label="Teknik Jaringan Komputer & Telekomunikasi">
-                  <option value="X-TJKT">X-TJKT</option>
-                  <option value="XI-TJKT">XI-TJKT</option>
-                  <option value="XII-TJKT">XII-TJKT</option>
-                </optgroup>
-                <optgroup label="Design Komunikasi Visual">
-                  <option value="X-DKV 1">X-DKV 1</option>
-                  <option value="X-DKV 2">X-DKV 2</option>
-                  <option value="XI-DKV 1">XI-DKV 1</option>
-                  <option value="XI-DKV 2">XI-DKV 2</option>
-                  <option value="XII-DKV">XII-DKV</option>
-                </optgroup>
-                <optgroup label="Hotel & Restorant">
-                  <option value="X-HR">X-HR</option>
-                  <option value="XI-HR">XI-HR</option>
-                  <option value="XII-HR">XII-HR</option>
-                </optgroup>
-                <optgroup label="Management Perkantoran Layanan Bisnis">
-                  <option value="X-MPLB">X-MPLB</option>
-                  <option value="XI-MPLB">XI-MPLB</option>
-                  <option value="XII-MPLB">XII-MPLB</option>
-                </optgroup>
-                <optgroup label="Teknik Kendaraan Ringan Otomotif">
-                  <option value="X-TKRO">X-TKRO</option>
-                  <option value="XI-TKRO">XI-TKRO</option>
-                  <option value="XII-TKRO">XII-TKRO</option>
-                </optgroup>
-                <optgroup label="Teknik Bisnis Sepeda Motor">
-                  <option value="X-TBSM">X-TBSM</option>
-                  <option value="XI-TBSM">XI-TBSM</option>
-                  <option value="XII-TBSM">XII-TBSM</option>
-                </optgroup>
-                <optgroup label="Teknik Mesin">
-                  <option value="X-TM">X-TM</option>
-                  <option value="XI-TM">XI-TM</option>
-                  <option value="XII-TM">XII-TM</option>
-                </optgroup>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
               </select>
             </div>
 
