@@ -1,5 +1,6 @@
 import { ClipboardText, Home, InfoCircle, Logout, Messages3, Setting, TaskSquare } from "iconsax-react"
 import ButtonNav from "./ButtonNav"
+import { Link } from "react-router-dom"
 
 
 const SideBar = () => {
@@ -17,7 +18,7 @@ const SideBar = () => {
         </div>
         <div className="flex flex-col">
             <ButtonNav path="/setting"><Setting/>Setting</ButtonNav>
-            <button className="flex justify-center items-center gap-2 mx-8 my-5 py-1.5 rounded-lg text-primary font-bold bg-[#0073ff27] transition hover:bg-[#0073ff4b]">Logout Account<Logout/></button>
+            <Link to={'/landing-page'} className="flex justify-center items-center gap-2 mx-8 my-5 py-1.5 rounded-lg text-primary font-bold bg-[#0073ff27] transition hover:bg-[#0073ff4b]">Logout Account<Logout/></Link>
         </div>
     </aside>
   )

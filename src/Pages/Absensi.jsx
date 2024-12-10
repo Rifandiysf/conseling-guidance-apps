@@ -8,7 +8,7 @@ const Absensi = () => {
       <Layout/>
       <section className="ml-[300px] mr-[20px] my-6">
         <div className="flex justify-center items-center bg-primary h-28 rounded-xl">
-          <h1 className="text-lg font-bold ">Absenesi page</h1>
+          <h1 className="text-lg font-bold text-body">Absenesi page</h1>
         </div>
         <div className="flex justify-between items-center bg-secondry h-12 my-4 px-3 rounded-xl">
           <div className="flex gap-2">
@@ -39,7 +39,7 @@ const Absensi = () => {
         <div>
           <table className="w-full">
             <thead className="bg-primary h-10 ">
-              <tr >
+              <tr className="text-body">
                 <th className="p-3 text-base font-semibold tracking-wide text-left">No</th>
                 <th className="p-3 text-base font-semibold tracking-wide text-left">Name</th>
                 <th className="p-3 text-base font-semibold tracking-wide text-left">Kelas</th>

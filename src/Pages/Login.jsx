@@ -9,13 +9,13 @@ const Login = () => {
             <h1 className="flex justify-center items-center mb-[50px] text-2xl font-bold">Login Page</h1>
             <div className="flex flex-col justify-start gap-1">
                 <label htmlFor="username" className="font-semibold">Username or Email</label>
-                <input className="bg-container p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-2" type="text" name="username" placeholder="Type Your Username" required />
+                <input className="bg-container p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-2" type="text" name="username" placeholder="Type Your Username" />
                 <label htmlFor="password" className="font-semibold">Password</label>
-                <input className="bg-container p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-2" type="password" name="pasword" placeholder="Type Your Password" required />
+                <input className="bg-container p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-2" type="password" name="pasword" placeholder="Type Your Password" />
             </div>
             <div className="flex flex-col justify-center items-center mt-[30px] gap-2.5">
                 <button type="submit" className="w-full h-10 bg-secondry rounded-md text-xl font-bold cursor-pointer transition hover:bg-[#94eb23]">Login</button>
-                <a href="#" className="hover:underline">Forgot Password?</a>
+                <Link href="#" className="hover:underline">Forgot Password?</Link>
             </div>
         </div>
       </form>
