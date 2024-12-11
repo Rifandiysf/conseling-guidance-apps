@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        { "source": "/", "destination": "./src/Pages/Dashboard.jsx" },
+        { "source": "*", "destination": "./src/Components/NotFound.jsx" },
+        { "source": "/setting", "destination": "./src/Pages/Setting.jsx" },
+        { "source": "/login", "destination": "./src/Pages/Login.jsx" },
+        { "source": "/register", "destination": "./src/Pages/Register.jsx" },
+        { "source": "/landing-page", "destination": "./src/Pages/LandingPage.jsx" },
+        { "source": "/test-psikologi", "destination": "./src/Pages/TestPsikologi.jsx" },
+        { "source": "/absensi", "destination": "./src/Pages/Absensi.jsx" },
+        { "source": "/problem", "destination": "./src/Pages/Problem.jsx" },
+        { "source": "/konsultasi", "destination": "./src/Pages/Konsultasi.jsx" }
+    ]
+}
