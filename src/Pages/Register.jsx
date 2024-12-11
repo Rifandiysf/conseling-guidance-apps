@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 const Register = () => {
   return (
     <section className="flex flex-col justify-center items-center bg-primary h-dvh">
-      <form action="" className="bg-body rounded-lg p-[25px]">
-        <div className="w-[45rem]">
-          <h1 className="flex justify-center items-center mb-[50px] text-2xl font-bold">Register</h1>
-          <div className="grid grid-cols-2 grid-rows-1 gap-x-8 gap-y-2 gap-5">
+      <form action="" className="bg-body rounded-lg p-[25px] max-sm:w-[97%] max-sm:p-[15px]">
+        <div className="w-[45rem] max-sm:w-full">
+          <h1 className="flex justify-center items-center mb-[50px] text-2xl font-bold max-sm:mb-[15px]">Register</h1>
+          <div className="grid grid-cols-2 grid-rows-1 gap-x-8 gap-y-2 gap-5 max-sm:grid-cols-1">
             <div className="flex flex-col gap-1">
               <label htmlFor="username" className="font-semibold">Username</label>
               <input className="bg-container p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-2" type="text" id="username" name="username" placeholder="Type Your Username" required/>
@@ -56,7 +56,7 @@ const Register = () => {
           <button type="submit" className="w-full h-10 mt-5 rounded-md bg-secondry text-xl font-bold">Create</button>
         </div>
       </form>
-      <Link to={"/login"} className="flex justify-center items-center mt-2.5 h-10 w-[33rem] rounded-lg text-primary text-xl font-semibold cursor-pointer bg-body transition hover:bg-container">Login</Link>
+      <Link to={"/login"} className="flex justify-center items-center mt-2.5 h-10 w-[33rem] rounded-lg text-primary text-xl font-semibold cursor-pointer bg-body transition hover:bg-container max-sm:w-[97%]">Login</Link>
     </section>
   )
 }

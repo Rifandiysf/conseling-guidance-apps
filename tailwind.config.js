@@ -19,6 +19,12 @@ export default {
           '0%, 100%': { transform: 'translateX(-25%)' },
           '50%': { transform: 'translateX(0)' },
         }
+      },
+      screens: {
+        phone: '360px',
+        tablet: '600px',
+        laptop: '1025px',
+        dektop: '1280px'
       }
     },
   },

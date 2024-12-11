@@ -6,7 +6,7 @@ const Absensi = () => {
   return (
     <>
       <Layout/>
-      <section className="ml-[300px] mr-[20px] my-6">
+      <section className="ml-[300px] mr-[20px] my-6 max-sm:mx-[10px] max-sm:mb-[80px]">
         <div className="flex justify-center items-center bg-primary h-28 rounded-xl">
           <h1 className="text-lg font-bold text-body">Absenesi page</h1>
         </div>
@@ -36,7 +36,7 @@ const Absensi = () => {
             <button className="bg-container p-[3px] rounded-md"><Edit/></button>
           </div>
         </div>
-        <div>
+        <div className="rounded-xl max-sm:overflow-x-scroll">
           <table className="w-full">
             <thead className="bg-primary h-10 ">
               <tr className="text-body">
