@@ -9,6 +9,7 @@ const TestPsikologi = () => {
   const handleRadio = () => {
     setCheckRadio(!checkedRadio);
   }
+
   return (
     <>
       <Layout/>

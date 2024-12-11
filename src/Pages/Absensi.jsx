@@ -1,8 +1,43 @@
-import { AddSquare, Danger, Edit, InfoCircle, TickCircle, Trash } from "iconsax-react"
+import { AddSquare, Danger, Edit, InfoCircle, TickCircle, Trash, } from "iconsax-react"
 import Layout from "../Components/Layout"
 
 
 const Absensi = () => {
+
+  const students = [{
+    id: 1,
+    name: "Wak Ujang",
+    class: "XI",
+    major: "PPLG",
+    status: <span className="bg-[#05FF00] bg-opacity-15 p-1 px-2 rounded-md font-semibold text-green-500">Hadir</span>,
+    note: <TickCircle color="#05FF00"/>
+  },
+  {
+    id: 2,
+    name: "Ceu Tini",
+    class: "XI",
+    major: "PPLG",
+    status: <span className="bg-[#b2e908] bg-opacity-15 p-1 px-2 rounded-md font-semibold text-[#b2e908]">Sakit</span>,
+    note: <TickCircle color="#05FF00"/>
+  },
+  {
+    id: 3,
+    name: "Bi Ani",
+    class: "XI",
+    major: "PPLG",
+    status: <span className="bg-yellow-400 bg-opacity-15 p-1 px-2 rounded-md font-semibold text-yellow-500">Izin</span>,
+    note: <InfoCircle color="#facc15"/>
+  },
+  {
+    id: 4,
+    name: "Mang Asep",
+    class: "XI",
+    major: "PPLG",
+    status: <span className="bg-red-400 bg-opacity-15 p-1 px-2 rounded-md font-semibold text-red-500">Alfa</span>,
+    note: <Danger color="#f87171"/>
+  }
+]
+
   return (
     <>
       <Layout/>
@@ -49,30 +84,16 @@ const Absensi = () => {
               </tr>
             </thead>
             <tbody className="bg-container">
-              <tr>
-                <td className="p-3.5 text-sm text-left">01.</td>
-                <td className="p-3.5 text-sm text-left">Rifandi Yusuf</td>
-                <td className="p-3.5 text-sm text-left">XI</td>
-                <td className="p-3.5 text-sm text-left">PPLG</td>
-                <td className="p-3.5 text-sm text-left"><span className="bg-[#05FF00] bg-opacity-15 p-1 px-2 rounded-md font-semibold text-green-500">Hadir</span></td>
-                <td className="p-3.5 text-sm text-left"><TickCircle color="#05FF00"/></td>
+              {students.map((students) => (
+              <tr key={students}>
+                <td className="p-3.5 text-sm text-left">{students.id}</td>
+                <td className="p-3.5 text-sm text-left">{students.name}</td>
+                <td className="p-3.5 text-sm text-left">{students.class}</td>
+                <td className="p-3.5 text-sm text-left">{students.major}</td>
+                <td className="p-3.5 text-sm text-left">{students.status}</td>
+                <td className="p-3.5 text-sm text-left">{students.note}</td>
               </tr>
-              <tr>
-                <td className="p-3.5 text-sm text-left">01.</td>
-                <td className="p-3.5 text-sm text-left">Rifandi Yusuf</td>
-                <td className="p-3.5 text-sm text-left">XI</td>
-                <td className="p-3.5 text-sm text-left">PPLG</td>
-                <td className="p-3.5 text-sm text-left"><span className="bg-yellow-400 bg-opacity-15 p-1 px-2 rounded-md font-semibold text-yellow-500">Izin</span></td>
-                <td className="p-3.5 text-sm text-left"><InfoCircle color="#facc15"/></td>
-              </tr>
-              <tr>
-                <td className="p-3.5 text-sm text-left">01.</td>
-                <td className="p-3.5 text-sm text-left">Rifandi Yusuf</td>
-                <td className="p-3.5 text-sm text-left">XI</td>
-                <td className="p-3.5 text-sm text-left">PPLG</td>
-                <td className="p-3.5 text-sm text-left"><span className="bg-red-400 bg-opacity-15 p-1 px-2 rounded-md font-semibold text-red-500">Alfa</span></td>
-                <td className="p-3.5 text-sm text-left"><Danger color="#f87171"/></td>
-              </tr>
+              ))}
             </tbody>
           </table>
         </div>
