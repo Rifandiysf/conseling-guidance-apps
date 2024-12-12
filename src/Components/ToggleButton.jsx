@@ -20,7 +20,7 @@ const ToggleButton = ({initialState = false, onToggle = () => {}}) => {
                 checked={isToggled}
                 onChange={handleToggle}/>
                 <div className={`w-12 h-6 rounded-full shadow-sm transition-colors duration-300 ease-in-out ${isToggled ? 'bg-primary' : 'bg-body'}`}></div>
-                <div className={`dot absolute left-1 top-1 bg-slate-700 w-4 h-4 rounded-full transition-transform duration-300 ease-in-out ${isToggled ? 'transform translate-x-6' : ''}`}></div>
+                <div className={`dot absolute left-1 top-1 w-4 h-4 rounded-full transition-transform duration-300 ease-in-out ${isToggled ? 'transform translate-x-6 bg-secondry' : 'bg-primary'}`}></div>
             </div>
         </label>
     </div>
