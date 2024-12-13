@@ -15,7 +15,7 @@ const Problem = () => {
             <h1 className="text-lg font-bold text-body">Problem Page</h1>
           </div>
 
-          <div className="col-span-1 row-span-3 grid grid-cols-2 grid-rows-2 gap-5 bg-container rounded-xl p-5 max-sm:grid-rows-3 max-sm:p-2.5">
+          <div className="col-span-1 row-span-3 grid grid-cols-2 grid-rows-2 gap-5 rounded-xl max-sm:grid-rows-3 max-sm:p-2.5">
             <div className="col-span-1 row-span-1 flex justify-center items-center gap-5 p-3 bg-primary h-full rounded-lg max-sm:col-span-2">
               <MenuProblem title={'Siswa Terlambat'} desc={'Cek siswa yang terlambat'} srcImg={StudentAreLate}/>
             </div>
