@@ -15,9 +15,9 @@ const Konsultasi = () => {
 
           <div className="col-span-1 row-span-4 flex  rounded-xl h-screen">
 
-            <div className="w-2/5 h-full rounded-l-xl border-slate-500 bg-text overflow-y-scroll overflow-x-hidden max-sm:w-full max-sm:rounded-xl">
+            <div className="w-2/5 h-full rounded-l-xl border-slate-500 bg-container overflow-y-scroll overflow-x-hidden max-sm:w-full max-sm:rounded-xl">
               <div className="w-full h-12 p-2.5 border-b border-[#f0f4f954]">
-                <h1 className="text-xl font-bold text-body">Chat</h1>
+                <h1 className="text-xl font-bold text-primary">Chat</h1>
               </div>
 
               <CardChat nameUser={'Guru BK'} lastChat={'Ada yg mau di bantu?'}/>
@@ -35,7 +35,7 @@ const Konsultasi = () => {
 
             </div>
 
-            <div className="flex justify-center items-center bg-container w-full h-full rounded-r-xl p-2.5 max-sm:hidden ">
+            <div className="flex justify-center items-center bg-[#3194f727] w-full h-full rounded-r-xl p-2.5 max-sm:hidden ">
               <div className="flex flex-col justify-center items-center">
                 <Message color="#3195F7" variant="Bulk" size={72}/>
                 <h1 className="text-xl font-bold text-primary">Ayo Mulai Pesan Anda</h1>
