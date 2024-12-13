@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Layout from "../Components/Layout"
 import Blob from "/Blob.svg"
 import Banner from "../Components/Banner"
+import messageIllus from "../assets/message.svg"
 
 const Dashboard = () => {
   return (
@@ -21,7 +22,10 @@ const Dashboard = () => {
             <Link to={'/test-psikologi'} className="text-center w-full bg-body p-1 rounded-lg font-semibold relative z-1">Test Personality</Link>
           </div>
           
-          <div className="col-span-3 row-span-1 rounded-xl bg-container"></div>
+          <div className="col-span-3 row-span-1 flex justify-between items-center relative px-7 overflow-hidden rounded-xl bg-container ">
+            <img src={messageIllus} className="absolute right-0 bottom-0" />
+            <h1 className="relative z-[1] font-semibold text-xl w-3/5 max-sm:text-base">Mari mulai ceritakan masalah psikologis anda ke guru counseling PI School</h1>
+          </div>
         </div>
       </section>
     </>
