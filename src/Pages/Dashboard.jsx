@@ -13,9 +13,9 @@ const Dashboard = () => {
         <div className="grid w-full grid-cols-5 grid-rows-4 gap-3 max-sm:grid-cols-3 max-sm:grid-rows-7"> 
           <Banner/>
 
-          <div className="col-span-2 row-span-2 rounded-xl overflow-hidden bg-container max-sm:col-span-3 max-sm:row-span-2 max-sm:overflow-y-visible">
-            <h1 className="text-xl font-bold w-full p-2.5 border-b rounded-t-xl">Problem Hari Ini</h1>
-            <div className="flex justify-center items-center flex-col gap-4 px-2.5 w-full h-full">
+          <div className="col-span-2 row-span-2 rounded-xl overflow-hidden bg-container max-sm:col-span-3 max-sm:row-span-2">
+            <h1 className="text-xl font-bold w-full p-2.5 mb-2 border-b rounded-t-xl">Problem Hari Ini</h1>
+            <div className="flex justify-center items-center flex-col gap-4 px-2.5 w-full h-[84%] max-sm:gap-2 max-sm:h-[80%]">
               <CountProblem Title={'Siswa Terlambat'} CountDisplay={6}/>
               <CountProblem Title={'Siswa Dalam Masalah'} CountDisplay={2}/>
               <CountProblem Title={'Siswa Dengan Surat Peringatan'} CountDisplay={8}/>
